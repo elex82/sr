@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="462.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="489.0" prefWidth="609.0">
+         <children>
+            <SplitPane dividerPositions="0.47324414715719065" layoutY="55.0" prefHeight="320.0" prefWidth="600.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="319.0" prefWidth="280.0">
+                     <children>
+                        <TableView fx:id="studentTable" layoutX="2.0" layoutY="24.0" prefHeight="296.0" prefWidth="280.0">
+                          <columns>
+                            <TableColumn fx:id="tableName" prefWidth="279.0" text="Cтуденты" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="318.0" prefWidth="381.0">
+                     <children>
+                        <TableView fx:id="tableStudent" layoutX="4.0" layoutY="22.0" prefHeight="296.0" prefWidth="312.0">
+                          <columns>
+                            <TableColumn fx:id="tableDate" prefWidth="155.0" text="дата" />
+                            <TableColumn fx:id="tableGrade" prefWidth="152.0" text="оценка" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+            <Label fx:id="vbr" layoutX="233.0" layoutY="6.0" prefHeight="17.0" prefWidth="109.0" text="выберете предмет" />
+            <Button fx:id="redac" layoutX="518.0" layoutY="384.0" mnemonicParsing="false" onAction="#exit" text="закрыть" />
+            <TextField fx:id="fildData" layoutX="220.0" layoutY="384.0" promptText="Дата" />
+            <TextField fx:id="fildO" layoutX="369.0" layoutY="384.0" promptText="Оценка" />
+            <TextField fx:id="fildName" layoutX="23.0" layoutY="384.0" prefHeight="25.0" prefWidth="188.0" promptText="Имя" />
+            <Button layoutX="23.0" layoutY="419.0" mnemonicParsing="false" onAction="#doba" text="добавить" />
+            <Button fx:id="reda" layoutX="384.0" layoutY="419.0" mnemonicParsing="false" onAction="#reda" text="редактировать" />
+            <Button layoutX="90.0" layoutY="419.0" mnemonicParsing="false" onAction="#delitStudent" text="удалить студента" />
+            <Button layoutX="257.0" layoutY="419.0" mnemonicParsing="false" onAction="#delitData" text="удалить дату" />
+            <Button layoutX="145.0" layoutY="23.0" mnemonicParsing="false" onAction="#english" text="Англиский" />
+            <Button layoutX="384.0" layoutY="23.0" mnemonicParsing="false" onAction="#java" text="java" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
